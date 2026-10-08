@@ -11,17 +11,17 @@ class MovieTicket {
 
     public int calculateDiscount(double ticketPrice, int numberOfTickets) {
        if(numberOfTickets >= 5) {
-           return (int) (ticketPrice * numberOfTickets * 0.1); // 10% discount for 5 or more tickets
+           return (int) (ticketPrice * numberOfTickets * 0.1); 
        } else {
-           return 0; // No discount for less than 5 tickets
+           return 0; 
        }
     }
 
     public double calculateFinalAmount(double ticketPrice, int numberOfTickets) {
        if(numberOfTickets >= 5) {
-           return ticketPrice * numberOfTickets * 0.9; // Apply 10% discount
+           return ticketPrice * numberOfTickets * 0.9; 
        } else {
-           return ticketPrice * numberOfTickets; // No discount
+           return ticketPrice * numberOfTickets; 
        }
     }
 
